@@ -59,7 +59,7 @@ bank_df.to_sql('raw_campaign', con=engine, if_exists='replace', index=False)
 
 # --------------------  QUICK EDA SNAPSHOT -------------------------------
 d = dtale.show(bank_df, ignore_duplicate=True)
-#d.open_browser()
+d.open_browser()
 
 # --------------------  PHASE 3 – DATA PREPARATION  ----------------------
 # ---- 3.1  Target recoding
